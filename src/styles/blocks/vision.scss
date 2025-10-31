@@ -18,7 +18,7 @@
   &__content {
     @include on-tablet {
       background-image: url(/src/images/Shapes.png);
-      background-position: 100%;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
     }
