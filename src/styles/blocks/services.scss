@@ -89,17 +89,7 @@
       transform: translateY(-50%);
     }
 
-    @include on-small-desktop {
-      margin-right: 88px;
-    }
 
-    @include on-design {
-      margin-right: 120px;
-    }
-
-    @include on-big-screen {
-      margin-right: 140px;
-    }
   }
 
   &__cards {
@@ -112,7 +102,7 @@
 
     @include on-tablet {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 264px);
       gap: 30px;
       margin-top: 56px;
       grid-column: span 6;
@@ -121,6 +111,11 @@
     @include on-small-desktop {
       grid-column: 6 / -1;
       gap: 20px;
+      grid-template-columns: repeat(2, 214px);
+    }
+
+    @include on-design {
+      grid-template-columns: repeat(2, 264px);
     }
   }
 
